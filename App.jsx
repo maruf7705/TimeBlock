@@ -2,6 +2,7 @@
 import React, { useState, useMemo, useCallback } from 'react';
 
 const App = () => {
+  console.log('App is rendering');
   const [activeView, setActiveView] = useState('tasks');
   const [tasks, setTasks] = useState([
     { id: 1, date: '2025-11-17', startTime: '10:00', endTime: '11:00', description: 'Team Meeting', notes: 'Discuss project milestones.' },
