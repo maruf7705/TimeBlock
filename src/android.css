@@ -1,0 +1,42 @@
+/* src/android.css */
+
+/* Smooth slide-up animation for Android */
+.plt-android .animate-slideUp {
+  animation: slideUp 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Style for the modal backdrop */
+.plt-android .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the modal content */
+.plt-android .modal-content {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  box-shadow: 0 -10px 25px -5px rgba(0, 0, 0, 0.1), 0 -10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Header button styles for Android */
+.plt-android .header-button {
+  padding: 1rem 0.5rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.plt-android .header-button.active {
+  color: #4A9782;
+  border-bottom-color: #4A9782;
+}
+
+.plt-android .header-button:not(.active) {
+  color: #6b7280;
+}
+
+.plt-android .header-button:hover:not(.active) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
